@@ -10,6 +10,8 @@ function clickCounter() {
 }
 
 var memer = clickCounter();
+var colors = ["aqua", "blue", "bisque", "coral", "darkmagenta", "bisque", "cadetblue"];
+var i = 0
 
 function meme() {
     if (document.getElementById('hai').innerHTML === "i'm so r ry") {
@@ -19,6 +21,8 @@ function meme() {
         document.getElementById('hai').innerHTML = 'click me u wont';
     }
     var x = memer();
+    i = i + 1;
+    document.body.style.backgroundColor = colors[i%(colors.length)];
 
     if (x === 1) {
         document.getElementById('ooh').style.display = "block";
