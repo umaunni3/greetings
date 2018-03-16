@@ -36,3 +36,18 @@ function meme() {
         document.getElementById('ooh').innerHTML = x;
     }
 }
+
+var reader = new FileReader();
+//reader.readAsText('something.txt');
+//console.log(reader.result);
+var output = '';
+reader.onload = function (e) {
+    output = e.target.result;
+    displayContents(output);
+    
+};
+reader.readAsText('something.txt');
+
+function displayContents(output_str) {
+    console.log(output_str);
+}
