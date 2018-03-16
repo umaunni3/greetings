@@ -10,7 +10,7 @@ function clickCounter() {
 }
 
 var memer = clickCounter();
-var colors = ["aqua", "blue", "bisque", "coral", "darkmagenta", "bisque", "cadetblue"];
+var colors = ["antiquewhite", "azure", "bisque", "#e6b3ff", "#ffe6cc", "#b3c6ff", "bisque", "#ccfff2", "#e6ffcc", "#ffcccc", "#fff0b3", "#ffe6f2", "#c6ecd9"];
 var i = 0
 
 function meme() {
