@@ -1,8 +1,102 @@
 body {
-    background-color: lightblue;
+    background-color: black;
+    top: 0px;
+/*    height: 50%;*/
 }
 
 /* setting attributes for ALL elements here */
 * {
     font-family: monospace;
+    color: aliceblue;
+}
+
+button {
+    /* make it look good */
+}
+
+input {
+    width: 60%;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 16px;
+    background-color: black;
+    outline: none;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    text-align: center;
+}
+
+input[id=newname] {
+    width: 50%;
+    font-size: 70%;
+}
+
+input:focus {
+    background-color: white;
+    color: black;
+}
+
+.fade {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+}
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+         
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ @-webkit-keyframes fadeOut {
+    100% {opacity: 0;}
+    0% {opacity: 1;}
+}
+         
+ @keyframes fadeOut {
+    100% {opacity: 0;}
+    0% {opacity: 1;}
+ }
+
+.in {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.out {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+#firstVisit {
+    top: 0px;
+}
+
+div {
+    text-align: center;
+    padding: 12% 0%;
+    align-items: center;
+    position: relative;
+    height: 100%;
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
 }
